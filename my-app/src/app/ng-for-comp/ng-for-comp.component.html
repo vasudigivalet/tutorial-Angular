@@ -1,0 +1,9 @@
+<!-- <div *ngFor="let item of [1,2,3]">
+ <p>Number is {{item}}</p>
+</div> -->
+<div *ngFor="let array of colors;let i=index">
+  <div [ngStyle]="{background:i%2==0?'grey':'white'}">
+
+  <div><span [ngStyle]="{color:i%2==0 ? 'red':'grey'}">{{i}} </span><span>Color: </span> {{array.color}}, <span>Value :</span> {{array.value}}</div>
+</div>
+</div>

@@ -1,0 +1,6 @@
+<p>event-binding works!</p>
+<span [ngClass]="{change:searchValue!=''}">Search:</span>
+<!-- <input type="text" (input)="changeSearchValue($event)" -->
+<input type="text" [(ngModel)]="searchValue">
+
+<span *ngIf="searchValue !==''">You search For "{{searchValue}}"</span>

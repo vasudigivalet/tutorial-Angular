@@ -1,0 +1,7 @@
+<div *ngFor="let p of [1,2,3,5,7]">
+<p><span [ngStyle]="{color:p%2==0?'green':'red'}">{{p}}</span></p>
+<p *ngIf="p===2;else notify">hello</p>
+<ng-template #notify>
+<p>bye</p>
+</ng-template>
+</div>
